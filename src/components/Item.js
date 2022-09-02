@@ -23,7 +23,7 @@ export default function Item({id, nombre, descripcion, stock, sumarUno}) {
       <h3>{nombre}</h3>
       <p>{descripcion}</p>
       <h5>Cantidad: <span>{(cantidad > 0 ? cantidad: "AGOTADO")}</span></h5>
-      <button disabled={cantidad === 0} onClick={() => {setStock();sumarUno()}}>{cantidad === 0 ? "AGOTADO":"COMPRAR"}</button>
+      <button disabled={cantidad === 0} onClick={() => {setStock();sumarUno()}}>{cantidad === 0 ? "SIN STOCK":"COMPRAR"}</button>
     </div>
   )
 }
